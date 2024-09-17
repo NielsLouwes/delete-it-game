@@ -8,7 +8,7 @@ public class PCScript : MonoBehaviour
     public float detectionDistance = 2f;
     public TextMeshProUGUI promptText;
     private bool canInteract = false;
-    private bool emailDeleted = false;
+    public bool emailDeleted = false;
 
     void Start()
     {
