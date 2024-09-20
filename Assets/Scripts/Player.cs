@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float playerSpeed = 8f;
+    public float playerSpeed = 20f;
     private Rigidbody2D rigidBody;
     private Vector2 movement;
     private bool isSneaking = false;
@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftControl)) {
            isSneaking = !isSneaking;
-           playerSpeed = isSneaking ? 4f : 8f;
+           playerSpeed = isSneaking ? 10f : 20f;
         } 
     }
 
